@@ -22,7 +22,7 @@ p {
 
 /* 导航栏样式 */
 nav {
-  background-color: #000;
+  background-color: #fff;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -45,7 +45,7 @@ nav {
 }
 
 .nav-bar a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -66,7 +66,7 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #000;
+  background-color: #fff;
   display: none;
   min-width: 150px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -91,23 +91,29 @@ nav {
 
 /* 横幅样式 */
 .app-banner {
-  background: linear-gradient(90deg, #000, #444); 
-  color: transparent;
-  padding: 30px 0;
+  background: linear-gradient(90deg, #000, #444); /* 黑到灰的渐变背景 */
+  padding: 60px 0; /* 增加 padding-top 将文字向下移动 */
   text-align: center;
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 1px;
-  animation: textFade 5s infinite; /* 文字渐变动画 */
+}
+
+.app-banner p {
+  margin: 0;
+  animation: textFade 10s infinite; /* 动画时间改为 10 秒 */
 }
 
 /* 文字渐变动画 */
 @keyframes textFade {
-  0%, 100% {
+  0%, 40% {
     color: transparent;
   }
-  50% {
+  50%, 90% {
     color: #fff;
+  }
+  100% {
+    color: transparent;
   }
 }
 
@@ -117,9 +123,9 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  height: 400px;
+  height: 300px; /* 减少高度，使上下留白一致 */
   padding: 0;
-  margin: 40px 0;
+  margin: 20px 0; /* 减少 margin-top 和 margin-bottom */
 }
 
 .banner-image {
@@ -140,7 +146,7 @@ nav {
 .best-dressed-section h2 {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* 减少 margin-bottom */
   border-bottom: 2px solid #ddd;
   display: inline-block;
   padding-bottom: 10px;
