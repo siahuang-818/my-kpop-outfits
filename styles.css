@@ -1,146 +1,47 @@
-/* 全局字体样式 */
-body {
-  font-family: 'Poppins', Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #333;
-}
-
-h1, h2 {
-  font-weight: 600;
-  margin: 20px 0;
-  color: #222;
-}
-
-p {
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: #555;
-}
-
-/* 导航栏样式 */
 nav {
-  background-color: #fff;
-  padding: 10px 0;
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 添加阴影，使导航栏更突出 */
-}
-
-.nav-bar {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.nav-bar li {
-  position: relative;
-}
-
-.nav-bar a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 10px 20px;
-  display: block;
-  transition: color 0.3s;
-}
-
-.nav-bar a:hover {
-  color: #ff6b6b;
-}
-
-/* 下拉菜单样式 */
-.dropdown-menu {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  width: 100%;
+  height: 60px;
   background-color: #fff;
-  display: none;
-  min-width: 150px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-menu li {
-  border-bottom: 1px solid #333;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
 }
 
-.dropdown-menu li:last-child {
-  border-bottom: none;
+.app-banner {
+  padding: 80px 0;
+  background: linear-gradient(90deg, #000, #444);
+  color: #fff;
+  text-align: center;
 }
 
-.dropdown-menu a {
-  padding: 10px;
-  font-size: 14px;
-}
-
-.nav-bar li:hover .dropdown-menu {
-  display: block;
-}
-
-/* 图片轮播容器 */
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  height: 320px; /* 增加高度，确保图片区域上下留白一致 */
-  padding: 0;
-  margin: 40px 0; /* 增加 margin-top 和 margin-bottom，使上下留白一致 */
 }
 
 .banner-image {
   width: 300px;
   height: 300px;
-  border-radius: 16px;
   object-fit: cover;
+  border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
-.banner-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* 标题样式 */
-.best-dressed-section h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ddd;
-  display: inline-block;
-  padding-bottom: 10px;
-  letter-spacing: 2px;
-  color: #333;
-}
-
-/* 底部样式 */
-footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-footer a {
-  color: #ff6b6b;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+  }
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
 }
