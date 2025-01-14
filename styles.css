@@ -13,14 +13,21 @@ nav {
   margin-top: 150px;
 }
 
+
 .app-banner {
-  padding: 10px 0;
-  height: 60px;
-  background: linear-gradient(90deg, #000, #444);
+  height: 40px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #000, #888); /* 修改深灰色为更亮的灰色 */
   color: #fff;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
+
 
 @keyframes text-fade {
   0%, 100% {
