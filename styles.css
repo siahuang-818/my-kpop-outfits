@@ -92,3 +92,31 @@ nav {
   letter-spacing: 2px;
   color: #333;
 }
+/* 横幅样式 */
+.app-banner {
+  background: linear-gradient(90deg, #000, #111); /* 黑色渐变背景 */
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* 动画效果：渐入 */
+@keyframes fadeInBanner {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 应用动画 */
+.app-banner {
+  animation: fadeInBanner 1s ease-in-out;
+}
+
