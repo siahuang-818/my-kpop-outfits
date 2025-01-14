@@ -66,3 +66,61 @@ body {
     max-width: 300px;
   }
 }
+/* 新增的CSS代码 */
+.outfit-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.outfit-item {
+  flex: 1 1 calc(25% - 20px); /* 每行四张图片，减去间隙 */
+  max-width: calc(25% - 20px); /* 每行四张图片，减去间隙 */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.outfit-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.outfit-item p {
+  padding: 10px;
+  margin: 0;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+.outfit-item:hover {
+  transform: scale(1.05);
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .outfit-item {
+    flex: 1 1 calc(33.33% - 20px); /* 每行三张图片 */
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .outfit-item {
+    flex: 1 1 calc(50% - 20px); /* 每行两张图片 */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .outfit-item {
+    flex: 1 1 100%; /* 每行一张图片 */
+    max-width: 100%;
+  }
+}
