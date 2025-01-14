@@ -58,6 +58,61 @@ nav {
   color: #ff6b6b;
 }
 
+/* 下拉菜单样式 */
+.dropdown-menu {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  display: none; /* 默认隐藏 */
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid #333;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.nav-bar li:hover .dropdown-menu {
+  display: block; /* 悬浮时显示下拉菜单 */
+}
+
+/* 横幅样式 */
+.app-banner {
+  background: linear-gradient(90deg, #000, #444); /* 黑到灰的渐变背景 */
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  animation: fadeInBanner 1.5s ease-in-out; /* 渐入动画，时间延长为1.5秒 */
+}
+
+/* 动画效果：渐入 */
+@keyframes fadeInBanner {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* 图片轮播容器 */
 .carousel {
   display: flex;
@@ -92,31 +147,21 @@ nav {
   letter-spacing: 2px;
   color: #333;
 }
-/* 横幅样式 */
-.app-banner {
-  background: linear-gradient(90deg, #000, #111); /* 黑色渐变背景 */
+
+/* 底部样式 */
+footer {
+  background-color: #222;
   color: #fff;
-  padding: 15px 0;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-/* 动画效果：渐入 */
-@keyframes fadeInBanner {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+footer a {
+  color: #ff6b6b;
+  text-decoration: none;
 }
 
-/* 应用动画 */
-.app-banner {
-  animation: fadeInBanner 1s ease-in-out;
+footer a:hover {
+  text-decoration: underline;
 }
-
