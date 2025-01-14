@@ -14,4 +14,21 @@ body {
   p {
     color: #555;
   }
-  
+  /* 新增导航栏样式 */
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
