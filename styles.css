@@ -1,41 +1,4 @@
-/* 导航栏样式 */
-nav {
-  background-color: #000;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.nav-bar {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.nav-bar li {
-  position: relative;
-}
-
-/* 导航栏主链接样式 */
-.nav-bar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 10px 20px;
-  display: block;
-  transition: color 0.3s;
-}
-
-.nav-bar a:hover {
-  color: #ff6
-  /* 全局字体样式 */
+/* 全局字体样式 */
 body {
   font-family: 'Poppins', Arial, sans-serif;
   background-color: #f9f9f9;
@@ -75,6 +38,10 @@ nav {
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+
+.nav-bar li {
+  position: relative;
 }
 
 .nav-bar a {
@@ -125,6 +92,3 @@ nav {
   letter-spacing: 2px;
   color: #333;
 }
-
-
-
