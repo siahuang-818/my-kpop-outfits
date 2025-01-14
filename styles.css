@@ -19,7 +19,7 @@ nav {
 }
 
 .nav-bar li {
-  position: relative; /* 让下拉菜单可以绝对定位 */
+  position: relative;
 }
 
 /* 导航栏主链接样式 */
@@ -34,83 +34,6 @@ nav {
 }
 
 .nav-bar a:hover {
-  color: #ff6b6b;
-}
+  color: #ff6
 
-/* 下拉菜单默认隐藏 */
-.dropdown-menu {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #000;
-  display: none; /* 默认隐藏 */
-  min-width: 150px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* 下拉菜单项样式 */
-.dropdown-menu li {
-  border-bottom: 1px solid #333;
-}
-
-.dropdown-menu li:last-child {
-  border-bottom: none;
-}
-
-.dropdown-menu a {
-  padding: 10px;
-  font-size: 14px;
-}
-
-/* 悬浮时显示下拉菜单 */
-.nav-bar li:hover .dropdown-menu {
-  display: block;
-}
-footer p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
-/* 图片轮播容器 */
-.carousel {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-/* 每张轮播图片的样式 */
-.banner-image {
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-/* 鼠标悬停时放大图片 */
-.banner-image:hover {
-  transform: scale(1.05);
-}
-<script>
-  // 选择轮播容器和图片
-  const carousel = document.querySelector(".carousel");
-  const images = document.querySelectorAll(".banner-image");
-
-  let currentIndex = 0;
-
-  function showNextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    carousel.scrollTo({
-      left: currentIndex * images[0].offsetWidth,
-      behavior: "smooth"
-    });
-  }
-
-  // 每隔 3 秒自动切换图片
-  setInterval(showNextImage, 3000);
-</script>
 
