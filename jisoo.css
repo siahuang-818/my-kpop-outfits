@@ -1,126 +1,80 @@
 /* 全局样式 */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 /* Header Section */
 .header-section {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-bottom: 30px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
 }
 
 .header-section h1 {
-  font-size: 28px;
-  margin: 0;
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
 }
 
-/* Outfit Gallery Section */
+/* Outfits Gallery Section */
 .outfit-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
 }
 
 .outfit-item {
-  width: 250px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s;
+    width: calc(25% - 20px); /* 每行四张图片 */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
 }
 
 .outfit-item img {
-  width: 100%;
-  height: auto;
-}
-
-.outfit-item p {
-  padding: 10px;
-  margin: 0;
-  background-color: #f8f8f8;
-}
-
-.outfit-item:hover {
-  transform: scale(1.05);
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .outfit-gallery {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .outfit-item {
     width: 100%;
-    max-width: 300px;
-  }
-}
-/* 新增的CSS代码 */
-.outfit-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
-}
-
-.outfit-item {
-  flex: 1 1 calc(25% - 20px); /* 每行四张图片，减去间隙 */
-  max-width: calc(25% - 20px); /* 每行四张图片，减去间隙 */
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.outfit-item img {
-  width: 100%;
-  height: auto;
-  display: block;
+    height: auto;
+    display: block;
 }
 
 .outfit-item p {
-  padding: 10px;
-  margin: 0;
-  background-color: #f8f8f8;
-  font-size: 14px;
+    padding: 15px;
+    margin: 0;
+    font-size: 16px;
+    color: #555;
 }
 
 .outfit-item:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* 响应式设计 */
 @media (max-width: 1200px) {
-  .outfit-item {
-    flex: 1 1 calc(33.33% - 20px); /* 每行三张图片 */
-    max-width: calc(33.33% - 20px);
-  }
+    .outfit-item {
+        width: calc(33.33% - 20px); /* 每行三张图片 */
+    }
 }
 
 @media (max-width: 768px) {
-  .outfit-item {
-    flex: 1 1 calc(50% - 20px); /* 每行两张图片 */
-    max-width: calc(50% - 20px);
-  }
+    .outfit-item {
+        width: calc(50% - 20px); /* 每行两张图片 */
+    }
 }
 
 @media (max-width: 480px) {
-  .outfit-item {
-    flex: 1 1 100%; /* 每行一张图片 */
-    max-width: 100%;
-  }
+    .outfit-item {
+        width: 100%; /* 每行一张图片 */
+    }
 }
