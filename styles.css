@@ -1,11 +1,3 @@
-/* Universal Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Navigation Bar Styles */
 nav {
   position: fixed;
   top: 0;
@@ -15,28 +7,41 @@ nav {
   background-color: #fff;
 }
 
-/* Main Content Styles */
 .main-content {
-  margin-top: 60px; /* Matches the height of the nav bar */
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
 }
 
-/* Banner Styles */
 .app-banner {
+  padding: 10px 0;
+  height: 60px;
   background: linear-gradient(90deg, #000, #444);
-  padding: 20px 0; /* Reduced padding for a thinner banner */
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.2;
   color: #fff;
+  text-align: center;
+  overflow: hidden;
 }
 
-/* Carousel Styles */
+@keyframes text-fade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.app-banner h1 {
+  font-size: 24px;
+  animation: text-fade 3s infinite;
+
+}
+
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 20px 0;
 }
 
 .banner-image {
@@ -48,15 +53,6 @@ nav {
   transition: transform 0.3s;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .carousel {
     flex-direction: column;
