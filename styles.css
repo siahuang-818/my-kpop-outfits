@@ -62,3 +62,47 @@ nav {
     height: auto;
   }
 }
+footer {
+  background-color: #222;      /* 深色背景 */
+  color: #fff;                 /* 白色文字 */
+  padding: 20px 0;             /* 内边距 */
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;               /* 使用 Flexbox 布局 */
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content div {
+  width: 45%;                  /* 子元素宽度 */
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #ffd700;              /* 金黄色标题 */
+}
+
+.footer-content p, .footer-content ul {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
