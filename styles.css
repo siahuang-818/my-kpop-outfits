@@ -97,6 +97,7 @@ nav {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 1px;
+  margin-top: 60px; /* Added margin to prevent overlap */
 }
 
 .app-banner p {
