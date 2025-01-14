@@ -69,3 +69,8 @@ nav {
 .nav-bar li:hover .dropdown-menu {
   display: block;
 }
+footer p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
