@@ -44,7 +44,7 @@ body {
 
 .outfit-item img {
     width: 100%; /* 图片填满父容器宽度 */
-    aspect-ratio: 4/3; /* 设置宽高比为 4:3 */
+    aspect-ratio: 3/4; /* 设置宽高比为 3:4 */
     object-fit: cover; /* 保持比例，裁剪多余部分 */
     object-position: center top; /* 调整裁剪位置，确保人头显示 */
     display: block;
