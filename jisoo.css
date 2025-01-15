@@ -44,7 +44,7 @@ body {
 }
 
 .outfit-item img {
-    width: 100%; /* 图片填满父容器宽度 */
+    width: 50%; /* 图片填满父容器宽度 */
     height: auto; /* 高度按比例调整 */
     display: block;
 }
