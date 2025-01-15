@@ -27,13 +27,13 @@ body {
 .outfit-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* 图片之间的间距 */
+    gap: 10px;
     padding: 10px;
     justify-content: flex-start; /* 从左到右排列 */
 }
 
 .outfit-item {
-    width: calc(25% - 10px); /* 每行四张图片，减去间距 */
+    width: calc(25% - 10px); /* 每行四张图片 */
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -44,7 +44,7 @@ body {
 }
 
 .outfit-item img {
-    width: 50%; /* 图片填满父容器宽度 */
+    width: 50%; /* 图片宽度为父容器的 50% */
     height: auto; /* 高度按比例调整 */
     display: block;
 }
