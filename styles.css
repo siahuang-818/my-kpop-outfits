@@ -93,19 +93,6 @@ html, body {
   margin-top: 70px; /* Adjusted for navbar height */
 }
 
-/* Banner Styles */
-.app-banner {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.app-banner h1 {
-  font-size: 28px;
-  color: #fff;
-}
-
 /* Best Dressed Section */
 .best-dressed-section {
   background-color: #333;
