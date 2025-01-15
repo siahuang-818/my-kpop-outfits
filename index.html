@@ -32,12 +32,39 @@
   </ul>
 </li>
 
-    <!-- Explore Button -->
-    <li class="nav-item explore-btn">
-      <a href="explore.html">Explore</a>
-    </li>
-  </ul>
-</nav>
+ <!-- Explore Search Section -->
+<section class="explore-search">
+  <h2>Explore</h2>
+  <p>Type a name (e.g., JISOO, Younjung Go) to explore their best outfits:</p>
+  <input type="text" id="explore-input" placeholder="Enter name...">
+  <button onclick="searchExplore()">Explore</button>
+</section>
+
+<script>
+  // JavaScript Function: 简单搜索跳转
+  function searchExplore() {
+    const input = document.getElementById('explore-input').value.toLowerCase().trim();
+    
+    // 定义页面对应关系
+    const pages = {
+      'jisoo': 'jisoo.html',
+      'younjung go': 'YounjungGo.html',
+      'hyegyo song': 'HyegyoSong.html',
+      'suzy bae': 'SuzyBae.html',
+      'bogum park': 'BogumPark.html',
+      'meovv': 'meovv.html',
+      'yuna': 'yuna.html',
+      'babymonster': 'babymonster.html'
+    };
+    
+    // 检查输入是否匹配页面
+    if (pages[input]) {
+      window.location.href = pages[input];
+    } else {
+      alert('No results found. Please try a different name.');
+    }
+  }
+</script>
 
    
 <!-- Main Content -->
