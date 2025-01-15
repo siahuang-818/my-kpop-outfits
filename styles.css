@@ -13,17 +13,18 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff; /* 改为纯白色背景 */
   padding: 15px 25px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* 更浅的阴影 */
   z-index: 1000;
+  border-bottom: 1px solid #e0e0e0; /* 添加底部边框 */
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 30px; /* 增大间距 */
   margin: 0;
   padding: 0;
 }
@@ -31,29 +32,19 @@ html, body {
 .nav-item > a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 600; /* 增加字体粗细 */
   font-size: 16px;
   padding: 10px 15px;
   display: inline-block;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .nav-item:hover > a {
-  background-color: #e0e0e0;
+  background-color: #f5f5f5; /* 改为更浅的悬停背景色 */
+  color: #4A90E2; /* 改为蓝色文字 */
   border-radius: 5px;
 }
 
-.dropdown-menu {
-  display: none;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  margin: 0;
-  width: 150px;
-}
-
-.nav-item:hover .dropdown-menu {
-  display: block;
-}
 
 .explore-search {
   text-align: center;
@@ -61,28 +52,47 @@ html, body {
   padding: 20px;
   max-width: 600px;
 }
+.explore-search {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 600px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  background-color: #f9f9f9;
+}
 
 .explore-search input {
-  width: calc(100% - 120px); /* 为按钮留出空间 */
-  max-width: 300px;
-  padding: 10px;
+  width: calc(100% - 130px); /* 为按钮留出更多空间 */
+  max-width: 350px;
+  padding: 12px 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.explore-search input:focus {
+  border-color: #4A90E2;
+  outline: none;
 }
 
 .explore-search button {
-  padding: 10px 20px;
+  padding: 12px 20px;
   background-color: #4A90E2;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.1s;
 }
 
 .explore-search button:hover {
   background-color: #357ABD;
+  transform: scale(1.05); /* 增加轻微放大效果 */
 }
 
 
