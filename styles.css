@@ -39,12 +39,37 @@ html, body {
   transition: color 0.3s, background-color 0.3s;
 }
 
+/* 导航栏中的链接样式 */
+.nav-item > a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 15px;
+  display: inline-flex; /* 改为 inline-flex，使图标和文字对齐 */
+  align-items: center; /* 垂直居中 */
+  gap: 8px; /* 图标与文字的间距 */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* 鼠标悬停效果 */
 .nav-item:hover > a {
-  background-color: #f5f5f5; /* 改为更浅的悬停背景色 */
-  color: #4A90E2; /* 改为蓝色文字 */
+  background-color: #f5f5f5;
+  color: #4A90E2;
   border-radius: 5px;
 }
 
+/* 导航栏中的图标样式 */
+.nav-item a i {
+  font-size: 18px;
+  color: #666;
+  transition: color 0.3s;
+}
+
+/* 悬停时图标颜色变化 */
+.nav-item:hover a i {
+  color: #4A90E2;
+}
 
 .explore-search {
   text-align: center;
