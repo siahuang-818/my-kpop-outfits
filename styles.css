@@ -205,12 +205,18 @@ footer {
 .footer-content p a:hover {
   text-decoration: underline;
 }
-/* 下拉菜单基础样式 */
+
+/* 导航栏中的子菜单项 */
+.nav-item {
+  position: relative; /* 使子菜单相对于父菜单定位 */
+}
+
+/* 下拉菜单样式 */
 .dropdown-menu {
   display: none; /* 默认隐藏下拉菜单 */
-  position: absolute; /* 绝对定位，确保相对于父元素定位 */
+  position: absolute; /* 绝对定位 */
   top: 100%; /* 下拉菜单显示在主菜单下方 */
-  left: 0;
+  left: 0; /* 与父菜单左对齐 */
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
@@ -240,4 +246,3 @@ footer {
 .nav-item:hover .dropdown-menu {
   display: block; /* 当鼠标悬停在主菜单项时显示下拉菜单 */
 }
-
