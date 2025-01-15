@@ -55,6 +55,36 @@ html, body {
   display: block;
 }
 
+.explore-search {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.explore-search input {
+  width: calc(100% - 120px); /* 为按钮留出空间 */
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.explore-search button {
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.explore-search button:hover {
+  background-color: #357ABD;
+}
+
 
 /* Main Content Styles */
 .main-content {
