@@ -55,7 +55,6 @@ html, body {
   display: block;
 }
 
-/* Explore Button Styling */
 .nav-item.explore-btn a {
   padding: 10px 20px;
   background-color: #4A90E2;
@@ -63,12 +62,13 @@ html, body {
   border-radius: 6px;
   text-transform: uppercase;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .nav-item.explore-btn a:hover {
   background-color: #357ABD;
 }
+
 
 /* Main Content Styles */
 .main-content {
