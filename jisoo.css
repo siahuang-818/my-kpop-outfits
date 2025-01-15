@@ -1,81 +1,81 @@
 /* 全局样式 */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* Header Section */
 .header-section {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 30px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
 
 .header-section h1 {
-    font-size: 36px;
-    margin: 0;
-    font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
 }
 
-
-
+/* Outfits Gallery Section */
 .outfit-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-    justify-content: flex-start; /* 从左到右排列 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
 }
 
 .outfit-item {
-    width: calc(25% - 10px); /* 每行四张图片 */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #fff;
+  width: calc(25% - 20px); /* 每行四张图片 */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
 }
 
 .outfit-item img {
-    width: 50%; /* 图片宽度为父容器的 50% */
-    height: auto; /* 高度按比例调整 */
-    display: block;
+  width: 100%; /* 图片填满父容器宽度 */
+  aspect-ratio: 4/3; /* 设置宽高比为 4:3 */
+  object-fit: cover; /* 保持比例，裁剪多余部分 */
+  display: block;
 }
 
 .outfit-item p {
-    margin-top: 10px;
-    padding: 0 10px;
-    font-size: 14px;
-    color: #555;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #555;
 }
 
 .outfit-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* 响应式设计 */
 @media (max-width: 1200px) {
-    .outfit-item {
-        width: calc(33.33% - 10px); /* 每行三张图片 */
-    }
+  .outfit-item {
+    width: calc(33.33% - 20px); /* 每行三张图片 */
+  }
 }
 
 @media (max-width: 768px) {
-    .outfit-item {
-        width: calc(50% - 10px); /* 每行两张图片 */
-    }
+  .outfit-item {
+    width: calc(50% - 20px); /* 每行两张图片 */
+  }
 }
 
 @media (max-width: 576px) {
-    .outfit-item {
-        width: 100%; /* 每行一张图片 */
-    }
+  .outfit-item {
+    width: 100%; /* 每行一张图片 */
+  }
 }
