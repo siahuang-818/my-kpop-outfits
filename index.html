@@ -33,55 +33,52 @@
       </ul>
     </li>
 
-<!-- About Link -->
-<li class="nav-item">
-  <a href="https://example.com/about" target="_blank">
-    <i class="fas fa-info-circle"></i> About
-  </a>
-</li>
+    <!-- About Link -->
+    <li class="nav-item">
+      <a href="https://example.com/about" target="_blank">
+        <i class="fas fa-info-circle"></i> About
+      </a>
+    </li>
 
-<!-- Contact Link -->
-<li class="nav-item">
-  <a href="https://example.com/contact" target="_blank">
-    <i class="fas fa-envelope"></i> Contact
-  </a>
-</li>
+    <!-- Contact Link -->
+    <li class="nav-item">
+      <a href="https://example.com/contact" target="_blank">
+        <i class="fas fa-envelope"></i> Contact
+      </a>
+    </li>
+  </ul>
+</nav>
 
+<main>
+  <!-- Explore Search Section -->
+  <section class="explore-search">
+    <h2>Explore</h2>
+    <input type="text" id="explore-input" placeholder="Enter name...">
+    <button onclick="searchExplore()">Explore</button>
+  </section>
 
-
-<!-- Explore Search Section -->
-<section class="explore-search">
-  <h2>Explore</h2>
-  <input type="text" id="explore-input" placeholder="Enter name...">
-  <button onclick="searchExplore()">Explore</button>
-</section>
-
-<script>
-  // JavaScript Function: 简单搜索跳转
-  function searchExplore() {
-    const input = document.getElementById('explore-input').value.toLowerCase().trim();
-    
-    // 定义页面对应关系
-    const pages = {
-      'jisoo': 'jisoo.html',
-      'younjung go': 'YounjungGo.html',
-      'hyegyo song': 'HyegyoSong.html',
-      'suzy bae': 'SuzyBae.html',
-      'bogum park': 'BogumPark.html',
-      'meovv': 'meovv.html',
-      'yuna': 'yuna.html',
-      'babymonster': 'babymonster.html'
-    };
-    
-    // 检查输入是否匹配页面
-    if (pages[input]) {
-      window.location.href = pages[input];
-    } else {
-      alert('No results found. Please try a different name.');
+  <!-- JavaScript Function -->
+  <script>
+    function searchExplore() {
+      const input = document.getElementById('explore-input').value.toLowerCase().trim();
+      const pages = {
+        'jisoo': 'jisoo.html',
+        'younjung go': 'YounjungGo.html',
+        'hyegyo song': 'HyegyoSong.html',
+        'suzy bae': 'SuzyBae.html',
+        'bogum park': 'BogumPark.html',
+        'meovv': 'meovv.html',
+        'yuna': 'yuna.html',
+        'babymonster': 'babymonster.html'
+      };
+      if (pages[input]) {
+        window.location.href = pages[input];
+      } else {
+        alert('No results found. Please try a different name.');
+      }
     }
-  }
-</script>
-  
+  </script>
+
   <!-- Best Dressed Section -->
   <section class="best-dressed-section">
     <h2>Best Outfits of the Season</h2>
@@ -92,16 +89,6 @@
     </div>
   </section>
 </main>
-<li class="nav-item">
-  <a href="https://example.com/about" target="_blank">
-    <i class="fas fa-info-circle"></i> About
-  </a>
-</li>
-<li class="nav-item">
-  <a href="https://example.com/contact" target="_blank">
-    <i class="fas fa-envelope"></i> Contact
-  </a>
-</li>
-  
+
 </body>
 </html>
