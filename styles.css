@@ -77,16 +77,6 @@ html, body {
   padding: 20px;
   max-width: 600px;
 }
-.explore-search {
-  text-align: center;
-  margin: 50px auto;
-  padding: 20px;
-  max-width: 600px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  background-color: #f9f9f9;
-}
 
 .explore-search input {
   width: calc(100% - 130px); /* 为按钮留出更多空间 */
