@@ -27,12 +27,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
 }
 
 .outfit-item {
-    width: calc(25% - 20px); /* 每行四张图片 */
+    width: 25%; /* 每行四张图片 */
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -43,15 +43,15 @@ body {
 }
 
 .outfit-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
 
 .outfit-item p {
-    padding: 15px;
-    margin: 0;
-    font-size: 16px;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 14px;
     color: #555;
 }
 
@@ -63,17 +63,17 @@ body {
 /* 响应式设计 */
 @media (max-width: 1200px) {
     .outfit-item {
-        width: calc(33.33% - 20px); /* 每行三张图片 */
+        width: 33.33%; /* 每行三张图片 */
     }
 }
 
 @media (max-width: 768px) {
     .outfit-item {
-        width: calc(50% - 20px); /* 每行两张图片 */
+        width: 50%; /* 每行两张图片 */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .outfit-item {
         width: 100%; /* 每行一张图片 */
     }
